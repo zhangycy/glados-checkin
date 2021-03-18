@@ -22,6 +22,7 @@ def start():
     payload={
         'token': 'glados_network'
     }
+    print(cookie,sckey,sever)
     checkin = requests.post(url,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent,'content-type':'application/json;charset=UTF-8'},data=json.dumps(payload))
     state =  requests.get(url2,headers={'cookie': cookie ,'referer': referer,'origin':origin,'user-agent':useragent})
    # print(res)
